@@ -15,6 +15,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.widget.*;
 
 import com.formation.dontforget.db.TaskContract;
@@ -150,4 +152,7 @@ public class MainActivity extends ListActivity{
 		sqlDB.execSQL(sql);
 		updateUI();
 	}
+	
+	
+	
 }
