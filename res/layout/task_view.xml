@@ -17,11 +17,12 @@
             android:textSize="20dp"
             android:layout_toLeftOf="@+id/doneButton"
             android:layout_alignBottom="@+id/doneButton"
-            android:gravity="center_vertical"/>
+            android:gravity="center_vertical"
+            android:background="#ffcd4f"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Done"
+            android:text="Delete"
             android:id="@+id/doneButton"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"

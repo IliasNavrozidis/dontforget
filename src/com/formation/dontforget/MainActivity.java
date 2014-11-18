@@ -29,8 +29,8 @@ public class MainActivity extends ListActivity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		ListView lst = (ListView)findViewById(R.id.taskTextView);
-		registerForContextMenu(lst);
+//		ListView lst = (ListView)findViewById(R.id.taskTextView);
+//		registerForContextMenu(lst);
 
 		updateUI();
 		// Set background image
@@ -107,35 +107,35 @@ public class MainActivity extends ListActivity{
 		this.setListAdapter(listAdapter);
 	}
 
-	@Override
-	public void onCreateContextMenu(ContextMenu menu, View v,
-			ContextMenuInfo menuInfo) {
-		super.onCreateContextMenu(menu, v, menuInfo);
-		
-		switch (v.getId()) {
-		case R.id.taskTextView:
-			MenuInflater inflater = getMenuInflater();
-			inflater.inflate(R.menu.delete_menu, menu);
-			break;
-		}
-	}
-
-	
-	@Override
-	public boolean onContextItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case R.id.delete:
-			Toast.makeText(this, "Delete button", Toast.LENGTH_SHORT).show();
-			return true;
-		case R.id.update:
-			Toast.makeText(this, "Update Button", Toast.LENGTH_SHORT).show();
-			return true;
-		
-		default:
-			return true;
-		}
-		
-	}
+//	@Override
+//	public void onCreateContextMenu(ContextMenu menu, View v,
+//			ContextMenuInfo menuInfo) {
+//		super.onCreateContextMenu(menu, v, menuInfo);
+//		
+//		switch (v.getId()) {
+//		case R.id.taskTextView:
+//			MenuInflater inflater = getMenuInflater();
+//			inflater.inflate(R.menu.delete_menu, menu);
+//			break;
+//		}
+//	}
+//
+//	
+//	@Override
+//	public boolean onContextItemSelected(MenuItem item) {
+//		switch (item.getItemId()) {
+//		case R.id.delete:
+//			Toast.makeText(this, "Delete button", Toast.LENGTH_SHORT).show();
+//			return true;
+//		case R.id.update:
+//			Toast.makeText(this, "Update Button", Toast.LENGTH_SHORT).show();
+//			return true;
+//		
+//		default:
+//			return true;
+//		}
+//		
+//	}
 
 	public void onDoneButtonClick(View view) {
 		View v = (View) view.getParent();
